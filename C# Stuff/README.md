@@ -1,4 +1,4 @@
-To Compile and Run C# on MacOS X:
+**To Compile and Run C# on MacOS X:**
 
 (1) Install MONO
 
@@ -19,12 +19,12 @@ http://www.mono-project.com/docs/about-mono/supported-platforms/osx/
 - omnisharp-atom (via preferences/install or using apm)
 - The green fire symbol on the bottom left of the atom window indicates that the OmniSharp server is running
 
-To compile a .cs file:
+**To compile a .cs file:**
 
-$ mcs filename.cs
+`$ mcs filename.cs`
 
-To run the c# executable:
+**To run the c# executable:**
 
-$ mono filename.exe
+`$ mono filename.exe`
 
 http://www.mono-project.com/docs/getting-started/mono-basics/
