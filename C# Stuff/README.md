@@ -19,6 +19,7 @@ http://www.mono-project.com/docs/about-mono/supported-platforms/osx/
 - omnisharp-atom (via preferences/install or using apm)
 - The green fire symbol on the bottom left of the atom window indicates that the OmniSharp server is running
 
+
 **To compile a .cs file:**
 
 `$ mcs filename.cs`
