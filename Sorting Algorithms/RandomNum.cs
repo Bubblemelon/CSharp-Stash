@@ -99,6 +99,18 @@ public class RandomNum
   }
 
   /*
+   * Improvement implementation for Sequence Generator 
+   *
+   */
+
+  public void newSeqArrGen()
+  {
+
+  }
+
+
+
+  /*
    * Sequence Generator -- returns an ARRAY
    *
    * min = minimum range value
@@ -109,7 +121,8 @@ public class RandomNum
    * must work with this function: operationSeqGen()
    *
    * IMPROVEMENT - make sequenceArrGen() a whole function with operationSeqGen()
-   *             - instead of one calling the other ! 
+   *             - instead of one calling the other !
+   *             - this improvement is being implemented in newSeqArrGen()
    */
 
    public int[] sequenceArrGen( int min, int max, Func<int,bool> op)
@@ -136,7 +149,7 @@ public class RandomNum
  *
  * odds
  *
- * squares Func<int,int>
+ * squares Func<int,int> ( DOES NOT WORK )
  *
  * evens
  *
@@ -202,9 +215,14 @@ public Func<int,bool> operationSeqGen()
     //
     //
 
+    /*
+     * Issues default: look at comments below
+     *
+     */
+
     default:
       Console.WriteLine("Invalid input !!!");
-      operationSeqGen(); // but the following code below runs right after ( as the first return )
+      operationSeqGen(); // The following code below runs right after correct userInput ( as the first return )
       //& ( the second return does not happen ! - from the second prompt input )
       Func<int, bool> someFunc = x => x == x; // dummy function to statisfy return type
       return someFunc;
@@ -269,7 +287,7 @@ public Func<int,bool> operationSeqGen()
     IEnumerable<int> sample = RN.sequenceIEnumGen(1,10);
     RN.showEnumSeq( sample );
 
-    int[] someArray = RN.sequenceArrGen( 1,10, RN.operationSeqGen() );
+    int[] someArray = RN.sequenceArrGen( 1,9, RN.operationSeqGen() );
     RN.showArrayValues( someArray );
 
 

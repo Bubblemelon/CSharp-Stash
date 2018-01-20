@@ -13,6 +13,8 @@ public class IOtest
 
       hello.AskUser<int>();
 
+      hello.Ask4Double();
+
   }
 
 }

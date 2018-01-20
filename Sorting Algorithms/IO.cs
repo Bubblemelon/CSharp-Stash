@@ -111,4 +111,14 @@ Return Value
     }
   }
 
+  public void Ask4Double()
+  {
+    Console.WriteLine("Input a decimal number e.g. 1.00: ");
+    double e = double.Parse(Console.ReadLine(),System.Globalization.NumberStyles.AllowDecimalPoint); //this second parameter may not do anything
+
+    Console.WriteLine("Your output will be in one decimal places e.g. 1.0:");
+    Console.WriteLine("{0:0.0}", e );
+
+  }
+
 }// class bracket
