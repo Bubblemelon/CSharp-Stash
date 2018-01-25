@@ -38,7 +38,7 @@ do {
 
   }
 
-} while ( swapped );
+} while ( swapped ); // stops when this becomes false
 
 }
 
