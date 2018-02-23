@@ -1,6 +1,6 @@
 using System;
 
-public class SimpleExample
+public class SomeFunctions
 {
 
   public void powerExample()
@@ -38,7 +38,7 @@ public class SimpleExample
 
    public static void Main()
    {
-     SimpleExample eg = new SimpleExample();
+     SomeFunctions eg = new SomeFunctions();
      // eg.powerExample();
 
      int twoPower8 = eg.powerFunc(2,8);

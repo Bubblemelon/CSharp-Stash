@@ -11,9 +11,11 @@ public class IOtest
 
       InOut<int> hello = new InOut<int>();
 
-      hello.AskUser<int>();
+      // hello.AskUser<int>();
+      //
+      // hello.Ask4Double();
 
-      hello.Ask4Double();
+      hello.LineCountLoop();
 
   }
 
