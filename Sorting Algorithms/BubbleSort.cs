@@ -4,6 +4,15 @@ using System;
 /*
  * Sorts smallest number to the largest ( ascending order )
  *
+ * Compares two elements at a time until the very end of the array
+ * Keep doing this iteration until there are no swaps!
+ *
+ * http://www.algolist.net/img/sorts/bubble-sort-3.png
+ *
+ *
+ * Compile this way:
+ * $ mcs BubbleSort.cs RandomNum.cs IO.cs
+ *
  */
 public class BubbleSort
 {
@@ -57,7 +66,7 @@ do {
 
     int size = hello.AskUserMore(); // NON-generic function
 
-    Console.WriteLine( "Input the upper limit of the range that the generator can randomize: " );
+    Console.WriteLine( "Input the upper limit (not inclusive) of the range that the generator can randomize e.g. 0 to ? : " );
 
     int max = hello.AskUserMore(); // NON-generic function
 

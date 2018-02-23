@@ -15,6 +15,9 @@ public class RandomNum
    *
    * and requires a value less than the maximum that each index will receive
    * " maxiValuePerIndex "
+   *
+   *
+   * maxiValuePerIndex is exclusive!!!!
    */
   public int[] RandNumArrGen( int arrSize, int maxiValuePerIndex)
   {
@@ -99,7 +102,7 @@ public class RandomNum
   }
 
   /*
-   * Improvement implementation for Sequence Generator 
+   * Improvement implementation for Sequence Generator
    *
    */
 
@@ -277,22 +280,22 @@ public Func<int,bool> operationSeqGen()
    *
    */
 
-  public static void Main()
-  {
-
-    RandomNum RN = new RandomNum();
-
-    //rNA.showArrayValues( rNA.RandNumArrGen(10, 100) );
-
-    IEnumerable<int> sample = RN.sequenceIEnumGen(1,10);
-    RN.showEnumSeq( sample );
-
-    int[] someArray = RN.sequenceArrGen( 1,9, RN.operationSeqGen() );
-    RN.showArrayValues( someArray );
-
-
-
-  }
+  // public static void Main()
+  // {
+  //
+  //   RandomNum RN = new RandomNum();
+  //
+  //   //rNA.showArrayValues( rNA.RandNumArrGen(10, 100) );
+  //
+  //   IEnumerable<int> sample = RN.sequenceIEnumGen(1,10);
+  //   RN.showEnumSeq( sample );
+  //
+  //   int[] someArray = RN.sequenceArrGen( 1,9, RN.operationSeqGen() );
+  //   RN.showArrayValues( someArray );
+  //
+  //
+  //
+  // }
 
 
 }

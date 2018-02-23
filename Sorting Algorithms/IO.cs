@@ -1,10 +1,14 @@
 using System;
 using System.Text;
 using System.IO;
+using System.Collections;
 
 /* Generic class with generic functions & NON-generic functions :
  *
  * Some simple stdin and stdout functions
+ *
+ * Compile this way:
+ * $ mcs IO.cs IOtest.cs
  */
 
 public class InOut<T>
@@ -167,5 +171,17 @@ Return Value
     // Line 2: what
 
   } // LineCountLoop() bracket
+
+  public void arrayListPrint( ArrayList arraylist )
+  {
+
+    Console.Write("The Arraylist: ");
+    foreach ( Object obj in arraylist )
+    {
+      Console.Write( "{0} ", obj );
+    }
+    Console.WriteLine();
+
+  }
 
 }// class bracket
