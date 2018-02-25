@@ -29,7 +29,7 @@
 
 ### [RandomNum.cs]()  
 
-# Note on adding CSS to HTML on Markdown files on Github:
+## Note on adding CSS to HTML on Markdown files on Github:
 
 Inline style attributes are always removed after rendering (e.g. within `<table>` tag). I have not identified the source of this outcome. This outcome can be seen using "inspect" tool on Chrome, inspect this page by doing <kbd>&#8984;</kbd> or <kbd>CTRL</kbd>+<kbd>⌥</kbd>+<kbd>C</kbd>. Locate the `<table>` tag and notice that the style attribute does not show on that particular element despite being on this README; some function is overriding this attribute.  
 
