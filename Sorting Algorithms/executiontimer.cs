@@ -23,7 +23,7 @@ class ExecutionTimer
     public void elapsedTime()
     {
       TimeSpan ts = stopWatch.Elapsed;
-      string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:000}",
+      string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:0000}",
           ts.Hours, ts.Minutes, ts.Seconds,
           ts.Milliseconds);
       Console.WriteLine("RunTime " + elapsedTime);

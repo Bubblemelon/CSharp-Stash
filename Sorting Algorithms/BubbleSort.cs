@@ -11,7 +11,7 @@ using System;
  *
  *
  * Compile this way:
- * $ mcs BubbleSort.cs RandomNum.cs IO.cs
+ * $ mcs BubbleSort.cs RandomNum.cs IO.cs executiontimer.cs
  *
  */
 public class BubbleSort
@@ -62,26 +62,52 @@ do {
 
     InOut<int> hello = new InOut<int>(); // generic class
 
-    Console.WriteLine( "Input the quanity or amount of numbers to sort: " );
+    ExecutionTimer eT = new ExecutionTimer(); // to test execution time
 
-    int size = hello.AskUserMore(); // NON-generic function
+    // Requires User's Interaction *** *** ***
+    //
+    // Console.WriteLine( "Input the quanity or amount of numbers to sort: " );
+    //
+    // int size = hello.AskUserMore(); // NON-generic function
+    //
+    // Console.WriteLine( "Input the upper limit (not inclusive) of the range that the generator can randomize e.g. 0 to ? : " );
+    //
+    // int max = hello.AskUserMore(); // NON-generic function
+    //
+    // // random number generator for array (initialize & instantiate)
+    // int[] test = rNA.RandNumArrGen(size, max);
+    //
+    // rNA.showArrayValues( test );
+    //
+    // bs.bubblesorting( test );
+    //
+    // System.Console.WriteLine("After sorting: ");
+    //
+    // rNA.showArrayValues( test );
+    //
+    // End of Requires User's Interaction *** *** ***
 
-    Console.WriteLine( "Input the upper limit (not inclusive) of the range that the generator can randomize e.g. 0 to ? : " );
 
-    int max = hello.AskUserMore(); // NON-generic function
+    int[] test2 = rNA.RandNumArrGen(100, 100);
+    rNA.showArrayValues( test2 );
 
-    // random number generator for array (initialize & instantiate)
-    int[] test = rNA.RandNumArrGen(size, max);
+    eT.startTimer();
 
-    rNA.showArrayValues( test );
+    bs.bubblesorting( test2 );
 
-    bs.bubblesorting( test );
+    eT.stopTimer();
+    eT.elapsedTime();
 
-    System.Console.WriteLine("After sorting: ");
+    rNA.showArrayValues( test2 );
 
-    rNA.showArrayValues( test );
-
-
+    ////////////////////////////////
+    // Time execution conclusion: //
+    ////////////////////////////////
+    //
+    // RunTime 00:00:00.0000  ( for almost all tests with 100 elements )
+    // Output:
+    // 0 0 4 4 5 6 7 8 10 12 13 14 15 17 17 18 18 18 19 19 20 20 22 22 22 24 25 26 26 26 27 27 28 28 28 29 31 31 31 32 34 34 34 40 41 41 43 43 43 45 46 46 46 47 47 48 51 51 52 52 53 53 57 58 65 65 66 67 67 70 71 71 71 71 72 72 72 74 75 75 75 78 80 81 81 81 84 87 87 89 89 91 93 96 96 98 98 98 99 99
+    //
   }
 
 
