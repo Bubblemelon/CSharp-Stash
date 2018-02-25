@@ -3,10 +3,10 @@
 ### [BubbleSort.cs]()  
 
 
-Class | Function
+Class: `BubbleSort` |
 ------------ | -------------
-`BubbleSort` | `bubblesorting( int[] numbers )`  
-  | Content in the second column
+ `bubblesorting( int[] numbers )` |
+  Content in the second column | 
 
 
 
