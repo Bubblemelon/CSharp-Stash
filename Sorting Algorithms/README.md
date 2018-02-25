@@ -4,7 +4,7 @@
 
 <table>
   <tr>
-    <td colspan="2"><code>BubbleSort</code></td>
+    <td colspan="2" align="center">Class: <code>BubbleSort</code></td>
   </tr>
   <tr>
     <td><code>bubblesorting( int[] numbers )</code></th>
