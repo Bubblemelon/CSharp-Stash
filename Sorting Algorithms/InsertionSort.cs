@@ -20,7 +20,7 @@ public class InsertionSort
    *
    * insertsort() is incomplete
    *
-   * insertsort1() works and is the common implementation. 
+   * insertsort1() works and is the common implementation.
    */
 
   // Class variables:
@@ -46,44 +46,43 @@ public class InsertionSort
     for( int i = 1; numbersList.Count > i; i++ )
     {
 
-      int j = i - 1;
+      int j = i;
 
-      while( j >= 0 )
+      while( j > 0 )
       {
         Console.WriteLine("i = {0}", i);
-        Console.WriteLine("Comparing {0} with {1}", numbersList[i], numbersList[j]);
+        Console.WriteLine("Comparing {0} with {1}", numbersList[i], numbersList[j-1]);
 
-        if( i == 1 )
+
+        if( Convert.ToInt32( numbersList[j-1] ) > Convert.ToInt32( numbersList[i] ) )
         {
-          if( Convert.ToInt32( numbersList[j] ) > Convert.ToInt32( numbersList[i] ) )
-          {
-            numbersList.Insert( j, numbersList[i] );
-            inOut.arrayListPrint( numbersList );
-
-            numbersList.RemoveAt( i + 1 );
-            Console.Write("First Element removed: ");
-            inOut.arrayListPrint( numbersList );
-            //continue;
-          }
-        }
-
-
-        if( Convert.ToInt32( numbersList[j] ) > Convert.ToInt32( numbersList[i] ) )
-        {
-          bigger = true;
-        }
-        else
-        {
-          bigger = false;
-        }
-
-
-        if( !bigger )
-        {
-          numbersList.Insert( j + 1 ,numbersList[i] );
-          numbersList.RemoveAt( i + 1 );
+          numbersList.Insert( j, numbersList[i] );
           inOut.arrayListPrint( numbersList );
+
+          numbersList.RemoveAt( i + 1 );
+          Console.Write("First Element removed: ");
+          inOut.arrayListPrint( numbersList );
+          //continue;
         }
+
+
+
+        // if( Convert.ToInt32( numbersList[j] ) > Convert.ToInt32( numbersList[i] ) )
+        // {
+        //   bigger = true;
+        // }
+        // else
+        // {
+        //   bigger = false;
+        // }
+
+        //
+        // if( !bigger )
+        // {
+        //   numbersList.Insert( j + 1 ,numbersList[i] );
+        //   numbersList.RemoveAt( i + 1 );
+        //   inOut.arrayListPrint( numbersList );
+        // }
 
         j--;
       } //while
