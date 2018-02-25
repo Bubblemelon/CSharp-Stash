@@ -2,7 +2,7 @@
 
 ### [BubbleSort.cs]()  
 
-<table style="border-radius:5px;border-collapse:collapse">
+<table class=""boxed-group">
   <tr>
     <td colspan="2" align="center"><code>BubbleSort</code> Class</td>
   </tr>
