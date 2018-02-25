@@ -1,6 +1,6 @@
 **To Compile and Run C# on MacOS X:**
 
-(1) Install MONO
+(1) Have MONO Installed
 
 - The Mono package includes:
 
@@ -13,7 +13,7 @@ Manual pages
 
 http://www.mono-project.com/docs/about-mono/supported-platforms/osx/
 
-(2) An IDE with OmniSharp installed
+(2) Have an IDE with OmniSharp installed
 
 - This is a server that will enable the code editor to have properties of a C# IDE
 - omnisharp-atom (via preferences/install or using apm)

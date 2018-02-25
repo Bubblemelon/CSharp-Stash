@@ -2,9 +2,14 @@
 
 ### [BubbleSort.cs]()  
 
-class `BubbleSort`  
 
-`bubblesorting( int[] numbers )`  
+Class | Function
+------------ | -------------
+`BubbleSort` | `bubblesorting( int[] numbers )`  
+  | Content in the second column
+
+
+
 
 This function takes an array of unsorted integers.  
 Returns a sorted array in ascending order.  
