@@ -5,7 +5,7 @@ using System.Linq;
 class findnum {
 
   /*
-   * Complete the function below.
+   *
    */
       static string findNumber(int[] arr, int k) {
 
