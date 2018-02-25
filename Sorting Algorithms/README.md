@@ -2,9 +2,9 @@
 
 ### [BubbleSort.cs]()  
 
-<table>
+<table style="width:100%">
   <tr>
-    <td style="width:887px" colspan="2" align="center"><code>BubbleSort</code> Class</td>
+    <td colspan="2" align="center"><code>BubbleSort</code> Class</td>
   </tr>
   <tr>
     <td nowrap><code>bubblesorting( int[] numbers )</code></th>
@@ -29,3 +29,11 @@
 ### [IO.cs]()  
 
 ### [RandomNum.cs]()  
+
+##### Note on adding CSS to HTML on Markdown files on Github:
+
+Inline style attributes always gets removed after rendering (e.g. within `<table>` tag). I have not identified the source of this outcome. This outcome can be seen using "inspect" tool on Chrome.   
+
+So to maintain equal table sizes throughout this README, keep sentences as long as possible to max out the table width within this README `<article>` tag.    
+
+I also could not find a way to add rounded corners to the tables on this README.  
