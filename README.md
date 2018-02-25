@@ -8,4 +8,4 @@ Various methods written in C#.
 
 ### :leaves: [Miscellaneous](https://github.com/Bubblemelon/algorithms/tree/master/Simple%20C%23%20Stuff)
 
-Refers to Simple C# Stuff folder.
+> Refers to Simple C# Stuff folder.
