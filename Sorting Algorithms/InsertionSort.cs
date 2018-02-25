@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 
+
 public class InsertionSort
 {
 
@@ -15,74 +16,67 @@ public class InsertionSort
    *
    *
    * Compile this way:
-   * $ mcs InsertionSort.cs RandomNum.cs IO.cs
+   * $ mcs InsertionSort.cs RandomNum.cs IO.cs executiontimer.cs
    *
    *
-   * insertsort() is incomplete
+   * insertsort() my implementation using an arraylist
    *
-   * insertsort1() works and is the common implementation.
+   * insertsort1() works and is the common implementation using an array.
    */
 
   // Class variables:
   private InOut<int> inOut = new InOut<int>(); // private by default if not specified
 
 
-
   public void insertsort( int[] numbers )
   {
-    bool bigger = false;
 
     // printing arrays https://stackoverflow.com/questions/3700448/how-to-print-contents-of-array-horizontally
-    Console.WriteLine( "The unsorted array [ {0} ]" ,string.Join(", ", numbers) );
+    // Console.WriteLine( "The unsorted array [ {0} ]" ,string.Join(", ", numbers) );
 
     // converting the numbers Array to an ArrayList
     ArrayList numbersList = new ArrayList();
     numbersList.AddRange( numbers );
 
     // prints the arraylist:
-    inOut.arrayListPrint( numbersList );
+    // inOut.arrayListPrint( numbersList );
 
 
     for( int i = 1; numbersList.Count > i; i++ )
     {
+      int deleteIndex = 1;
+      int offset = 1;
 
       int j = i;
 
+      int current = Convert.ToInt32(numbersList[i]);
+
+      //Console.WriteLine("Iteration {0}", i);
+      // inOut.arrayListPrint( numbersList );
+
       while( j > 0 )
       {
-        Console.WriteLine("i = {0}", i);
-        Console.WriteLine("Comparing {0} with {1}", numbersList[i], numbersList[j-1]);
+        // Console.WriteLine("i = {0}", i);
+        // Console.WriteLine( "Comparing current={0} with prev={1}", current, numbersList[j-1] );
 
-
-        if( Convert.ToInt32( numbersList[j-1] ) > Convert.ToInt32( numbersList[i] ) )
+        if( Convert.ToInt32(numbersList[j-1]) > current )
         {
-          numbersList.Insert( j, numbersList[i] );
-          inOut.arrayListPrint( numbersList );
+          // Console.WriteLine("Inserted at index {0}", j-1);
+          numbersList.Insert( j-1, current );
+          // inOut.arrayListPrint( numbersList );
 
-          numbersList.RemoveAt( i + 1 );
-          Console.Write("First Element removed: ");
-          inOut.arrayListPrint( numbersList );
-          //continue;
+          // Console.WriteLine("Deleted at index {0}", i + deleteIndex);
+          numbersList.RemoveAt( i + deleteIndex );
+          deleteIndex--;
+          // inOut.arrayListPrint( numbersList );
+
+          // Console.WriteLine( "Current element={0} at index={1}", numbersList[i-offset], i-offset );
+          current = Convert.ToInt32(numbersList[i-offset]);
+          offset++;
+
+          // inOut.arrayListPrint( numbersList );
+
         }
-
-
-
-        // if( Convert.ToInt32( numbersList[j] ) > Convert.ToInt32( numbersList[i] ) )
-        // {
-        //   bigger = true;
-        // }
-        // else
-        // {
-        //   bigger = false;
-        // }
-
-        //
-        // if( !bigger )
-        // {
-        //   numbersList.Insert( j + 1 ,numbersList[i] );
-        //   numbersList.RemoveAt( i + 1 );
-        //   inOut.arrayListPrint( numbersList );
-        // }
 
         j--;
       } //while
@@ -90,13 +84,14 @@ public class InsertionSort
 
     } //for
 
+    inOut.arrayListPrint( numbersList );
   } //insertsort()
 
 
   public void insertsort1( int[] array )
   {
 
-  Console.WriteLine( "The unsorted array [ {0} ]" ,string.Join(", ", array ) );
+  // Console.WriteLine( "The unsorted array [ {0} ]" ,string.Join(", ", array ) );
 
   for( int i = 1; array.Length > i; i++ ) // starting at the second element so we can use its prev to compare
   {
@@ -104,7 +99,7 @@ public class InsertionSort
 
     int current = array[i]; // the current element to compare with its previous elements
 
-    Console.WriteLine( "Comparing array[{0}] = {2} < array[{1}] = {3}" , i, (j-1), current, array[ j-1 ] );
+    // Console.WriteLine( "Comparing array[{0}] = {2} < array[{1}] = {3}" , i, (j-1), current, array[ j-1 ] );
 
     while( j > 0 && array[ j-1 ] > current )
     {
@@ -112,16 +107,18 @@ public class InsertionSort
 
       j--; // move on to the prev's prev
 
-      Console.WriteLine( "The changed array [ {0} ]" ,string.Join(", ", array ) );
+      // Console.WriteLine( "The changed array [ {0} ]" ,string.Join(", ", array ) );
     }
 
     // j is whatever index that when (prev) { array[ j-1 ] > current } is NOT TRUE
     // This below is unchanged if while loop is not satisfied, since j = i and array[j] == current
-    Console.WriteLine( "j={0}",j );
+    // Console.WriteLine( "j={0}",j );
+
     array[j] = current; // this is so that if the while loop does statisfy then need to replace
-    Console.WriteLine( "This iteration's array [ {0} ]" ,string.Join(", ", array ) );
+
+    // Console.WriteLine( "This iteration's array [ {0} ]" ,string.Join(", ", array ) );
   }
-    Console.WriteLine("*** *** *** *** *** ***");
+    // Console.WriteLine("*** *** *** *** *** ***");
     Console.WriteLine( "The Insertion Sorted array: [ {0} ]" ,string.Join(", ", array ) );
 
   }
@@ -133,32 +130,56 @@ public class InsertionSort
 
    RandomNum rNA = new RandomNum();
 
+   ExecutionTimer eT = new ExecutionTimer(); // to test execution time
+
    // int[] array = new int[] { 3,1,4,6,7,5,2 };
 
+
+
    // random number generator for array (initialize & instantiate)
-   int[] test = rNA.RandNumArrGen(10, 100);
-   int[] test2 = rNA.RandNumArrGen(10, 50);
-   int[] test3 = rNA.RandNumArrGen(10, 25);
+   //int[] test = rNA.RandNumArrGen(5, 100);
+   int[] test2 = rNA.RandNumArrGen(10, 100);
+   // int[] test3 = rNA.RandNumArrGen(10, 25);
+   //
 
 
-   insertS.insertsort1( test );
+   // ***** Tests for insertsort() *****
+   //
+   // insertS.insertsort( array );
+   //
+   eT.startTimer();
 
-   insertS.insertsort1( test2 );
+   insertS.insertsort( test2 );
 
-   insertS.insertsort1( test3 );
+   eT.stopTimer();
+   eT.elapsedTime();
+
+
+
+   // ***** Tests for insertsort1() *****
+   //
+   // insertS.insertsort1( test );
+   //
+   // eT.startTimer();
+   //
+   // insertS.insertsort1( test2 );
+   //
+   // eT.stopTimer();
+   // eT.elapsedTime();
+   //
+   // insertS.insertsort1( test3 );
+
+
+   ////////////////////////////////
+   // Time execution conclusion: //
+   ////////////////////////////////
+   //
+   // insert1() is slightly faster than insert()
+   // Actually about the same.. almost insignificant
+   //
+
 
 
  } //main
 
 } //class
-
-
-// for( int j = i - 1; j > 0; j-- )
-// {
-//   Console.WriteLine("i Index {0} has element {1}", i, numbers[i]);
-//
-//   Console.WriteLine("j Index {0} has element {1}", j, numbers[j]);
-//
-//   Console.WriteLine("Comparing {0} with {1}", numbers[i], numbers[j]);
-//
-// }//for
