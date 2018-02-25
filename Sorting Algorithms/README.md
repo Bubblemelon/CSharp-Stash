@@ -4,7 +4,7 @@
 
 <table>
   <tr>
-    <td style="width:inherit" colspan="2" align="center"><code>BubbleSort</code> Class</td>
+    <td style="width:100%" colspan="2" align="center"><code>BubbleSort</code> Class</td>
   </tr>
   <tr>
     <td nowrap><code>bubblesorting( int[] numbers )</code></th>
