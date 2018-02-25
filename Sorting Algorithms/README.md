@@ -7,10 +7,9 @@
     <td colspan="2" align="center"><code>BubbleSort</code> Class</td>
   </tr>
   <tr>
-    <td><code>bubblesorting( int[] numbers )</code></th>
+    <td nowrap><code>bubblesorting( int[] numbers )</code></th>
     <td align="left">
-        <p>This function takes an array of unsorted integers.
-        <p>Returns a sorted array in ascending order.</p>
+        <p>This function takes an array of unsorted integers. Returns a sorted array in ascending order.</p>
         <p>For a descending order refer to <a href="https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/bubblesort.rb">bubblesort.rb</a></p>
     </td>
   </tr>
