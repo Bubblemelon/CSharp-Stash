@@ -109,8 +109,7 @@
     </td>
 </table>
 
-### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#select) [SelectionSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/SelectionSort.cs)  
-
+### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#select) [SelectionSort.cs]
 ## Complementing Classes  
 
 ### [executiontimer.cs]()  
