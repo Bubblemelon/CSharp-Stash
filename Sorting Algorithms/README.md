@@ -1,6 +1,13 @@
-# Sorting Algorithms  
+# Sorting Algorithms
 
-### [BubbleSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/BubbleSort.cs)  
+#### Contents:
+
+- [Bubble Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#bubble)  
+- [Insertion Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#insert)  
+- [Selection Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#select)  
+
+
+### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#bubble) [BubbleSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/BubbleSort.cs)  
 
 <table style="width:100%">
   <tr>
@@ -33,7 +40,7 @@
   </tr>
 </table>
 
-### [InsertionSort.cs]()
+### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#insert) [InsertionSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/InsertionSort.cs)
 
 <table style="width:100%">
   <tr>
@@ -102,7 +109,7 @@
     </td>
 </table>
 
-### [SelectionSort.cs]()  
+### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#select) [SelectionSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/SelectionSort.cs)  
 
 ## Complementing Classes  
 
