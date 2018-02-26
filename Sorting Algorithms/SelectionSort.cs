@@ -14,6 +14,12 @@ public class SelectionSort
    * Places the minimum at the end of the sorted portion.
    *
    * Iteration ends when it reaches the last element in the unsorted array.
+   *
+   *
+   *
+   * Compile this way:
+   * $ mcs SelectionSort.cs RandomNum.cs executiontimer.cs
+   *
    */
 
   public void selectionsort( int[] numbers )
@@ -72,7 +78,7 @@ public class SelectionSort
 
   public static void Main()
   {
-    SelectionSort selectS = new SelectionSort();
+     SelectionSort selectS = new SelectionSort();
 
      RandomNum rNA = new RandomNum();
 
