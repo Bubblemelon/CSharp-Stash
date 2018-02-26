@@ -100,8 +100,6 @@
       <br/>
       <a href="https://www.youtube.com/watch?v=juf0OL0hYxY">Insertion Sort Video</a>
     </td>
-  <tr>
-  </tr>
 </table>
 
 ### [SelectionSort.cs]()  
