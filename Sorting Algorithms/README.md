@@ -4,17 +4,17 @@
 
 <table style="width:100%">
   <tr>
-    <td colspan="2" align="center"><code>BubbleSort</code> Class</td>
+    <td colspan="2" align="center"><code>BubbleSort</code> Class
+    </td>
   </tr>
   <tr>
-    <td rowspan="2" nowrap><code>bubblesorting( int[] numbers )</code></th>
+    <td rowspan="2" nowrap><code>bubblesorting( int[] numbers )</code></td>
     <td align="left">
         This function takes an array of unsorted integers.
         Returns a sorted array in ascending order.
         <br/>
         <br/>
         For a descending order refer to <a href="https://github.com/Bubblemelon/Ruby-Stuff/blob/master/ruby%20practice/bubblesort.rb">bubblesort.rb</a>
-
     </td>
   </tr>
   <tr>
@@ -29,7 +29,6 @@
     <br/>
     <br/>
     <a href="https://www.youtube.com/watch?v=HJynyWnpf-o">Bubble Sort Video</a>
-
     </td>
   </tr>
 </table>
@@ -41,7 +40,7 @@
     <td colspan="2" align="center"><code>InsertionSort</code> Class</td>
   </tr>
   <tr>
-    <td rowspan="2" nowrap><code>insertsort1( int[] numbers )</code></th>
+    <td rowspan="2" nowrap><code>insertsort1( int[] numbers )</code></td>
     <td align="left">
         This function takes an array of unsorted integers.
         <br/>
@@ -75,7 +74,7 @@
     </td>
   </tr>
   <tr>
-    <td rowspan="2" nowrap><code>insertsort( int[] numbers )</code></th>
+    <td rowspan="2" nowrap><code>insertsort( int[] numbers )</code></td>
     <td align="left">
         Same purpose as <code>insertsort1( int[] numbers )</code>.
         <br/>
@@ -84,7 +83,6 @@
         <br/>
         <br/>
         For time execution between <code>insertsort( int[] numbers )</code> and <code>insertsort1( int[] numbers )</code> refer to the <code>Main()</code> method of this class.
-
     </td>
   </tr>
     <td align="left">
