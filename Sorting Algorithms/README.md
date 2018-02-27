@@ -4,7 +4,10 @@
 
 - [Bubble Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#bubble)  
 - [Insertion Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#insert)  
-- [Selection Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#:o:)  
+- [Selection Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#select)
+
+- [executiontimer.cs](ttps://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#executiontimer.cs)  
+)
 
 
 ### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#bubble) [BubbleSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/BubbleSort.cs)  
@@ -109,10 +112,10 @@
     </td>
 </table>
 
-### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#:o:) [SelectionSort.cs]
+### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#select) [SelectionSort.cs]
 ## Complementing Classes  
 
-### [executiontimer.cs]()  
+### [executiontimer.cs](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#executiontimer.cs)  
 
 ### [IO.cs]()  
 
