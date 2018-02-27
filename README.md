@@ -8,7 +8,9 @@ Various methods written in C#.
 
 ### :leaves: [Miscellaneous](https://github.com/Bubblemelon/algorithms/tree/master/Simple%20C%23%20Stuff)
 
-- [something](https://github.com/Bubblemelon/algorithms#something)
+- [something](https://github.com/Bubblemelon/algorithms#something)  
+
+- [hello](https://github.com/Bubblemelon/algorithms#hello)
 
 > Refers to Simple C# Stuff folder.
 
@@ -59,3 +61,5 @@ Various methods written in C#.
 &nbsp
 
 ### [something](https://github.com/Bubblemelon/algorithms#something)
+
+[`hello`](https://github.com/Bubblemelon/algorithms#hello)
