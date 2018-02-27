@@ -122,10 +122,24 @@
 
 ## Note on adding CSS to HTML on Markdown files on Github:
 
+**style attribute:**
+
 Inline style attributes are always removed after rendering (e.g. within `<table>` tag). I have not identified the source of this outcome. This outcome can be seen using "inspect" tool on Chrome, inspect this page by doing <kbd>&#8984;</kbd> or <kbd>CTRL</kbd>+<kbd>⌥</kbd>+<kbd>C</kbd>.  
 
-Locate the `<table>` tag and notice that the style attribute does not show on that particular element despite being on this README; some function is overriding this attribute.  
+> **table:**
 
-So to maintain equal table sizes throughout this README, keep sentences as long as possible to max out the table width within this README `<article>` tag.    
+> Locate the `<table>` tag and notice that the style attribute does not show on that particular element despite being on this README; some function is overriding this attribute.  
 
-Hence I could not use the style attribute to add rounded corners to the tables on this README.  
+> So to maintain equal table sizes throughout this README, keep sentences as long as possible to max out the table width within this README `<article>` tag.    
+
+> Hence I could not use the style attribute to add rounded corners to the tables on this README.  
+
+**Table of Contents:** 
+
+Anchor links that jump to a section of a page (table of contents) only work on headers! Not any link can have this functionality, e.g.  
+
+doing \[\`code\`\]\(https://github.com/Bubblemelon/algorithms#code\) does not work.
+
+Additionally this only works on the wiki section of a repository or at the root directory, e.g. using this url https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#code which is not the same level as the root directory does not work.  
+
+For this link jump to work, the # portion of the url must in be *lowercase* and if the header title is more than one word then the url should be concatenated in this manner e.g. \#\#\#Hello There , url#hello\.   
