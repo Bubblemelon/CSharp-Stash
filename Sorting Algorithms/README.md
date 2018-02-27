@@ -2,18 +2,16 @@
 
 #### Contents:
 
-- [Bubble Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#bubble)  
+- [Bubble Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#BubbleSort)  
 - [Insertion Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#insert)  
 - [Selection Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#select)
 
-- [executiontimer.cs](ttps://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#executiontimer.cs)
 
-
-### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#bubble) [BubbleSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/BubbleSort.cs)  
+### :o: [BubbleSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/BubbleSort.cs)  
 
 <table style="width:100%">
   <tr>
-    <td colspan="2" align="center"><code>BubbleSort</code> Class
+    <td colspan="2" align="center"><code><a href="https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#BubbleSort">BubbleSort<a></code> Class
     </td>
   </tr>
   <tr>
@@ -42,7 +40,7 @@
   </tr>
 </table>
 
-### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#insert) [InsertionSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/InsertionSort.cs)
+### :o: [InsertionSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/InsertionSort.cs)
 
 <table style="width:100%">
   <tr>
@@ -111,14 +109,14 @@
     </td>
 </table>
 
-### [:o:](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#select) [SelectionSort.cs]
+### :o: [SelectionSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/SelectionSort.cs)
 ## Complementing Classes  
 
-### [executiontimer.cs](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#executiontimer.cs)  
+### :hourglass: [executiontimer.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/executiontimer.cs)  
 
-### [IO.cs]()  
+### :floppy_disk: [IO.cs]()  
 
-### [RandomNum.cs]()  
+### :school_satchel: [RandomNum.cs]()  
 
 ## Note on adding CSS to HTML on Markdown files on Github:
 
