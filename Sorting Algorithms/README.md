@@ -2,16 +2,16 @@
 
 #### Contents:
 
-- [Bubble Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#BubbleSort)  
-- [Insertion Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#insert)  
-- [Selection Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#select)
+- [Bubble Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#bubble)  
+- [Insertion Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#insertion)  
+- [Selection Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#selection)
 
 
-### :o: [BubbleSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/BubbleSort.cs)  
+### :o: [Bubble Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#bubble)
 
 <table style="width:100%">
   <tr>
-    <td colspan="2" align="center"><code><a href="https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#BubbleSort">BubbleSort<a></code> Class
+    <td colspan="2" align="center"><code><a href="https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/BubbleSort.cs">BubbleSort</a></code> Class
     </td>
   </tr>
   <tr>
@@ -40,11 +40,11 @@
   </tr>
 </table>
 
-### :o: [InsertionSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/InsertionSort.cs)
+### :o: [Insertion Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#insertion)  
 
 <table style="width:100%">
   <tr>
-    <td colspan="2" align="center"><code>InsertionSort</code> Class</td>
+    <td colspan="2" align="center"><code><a href="https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/InsertionSort.cs">InsertionSort</a></code> Class</td>
   </tr>
   <tr>
     <td rowspan="2" nowrap><code>insertsort1( int[] numbers )</code></td>
@@ -109,7 +109,9 @@
     </td>
 </table>
 
-### :o: [SelectionSort.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/SelectionSort.cs)
+### :o: [Selection Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#selection)  
+
+
 ## Complementing Classes  
 
 ### :hourglass: [executiontimer.cs](https://github.com/Bubblemelon/algorithms/blob/master/Sorting%20Algorithms/executiontimer.cs)  
