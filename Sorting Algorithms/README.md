@@ -1,16 +1,16 @@
 # Sorting Algorithms
 
-##### This has been moved this to the [Wiki section](https://github.com/Bubblemelon/algorithms/wiki/Sorting-Algorithms) of this repository.  
-
-
-The following are some reasons why and what I have discovered before making this decision.
+#### This has been moved this to the [Wiki section](https://github.com/Bubblemelon/algorithms/wiki/Sorting-Algorithms) of this repository.  
+<br/>
+The following are some reasons why and what I have discovered before making this decision.  
 
 ## Notes on using CSS and HTML in Markdown files on Github:  
 
-**style attribute:**
+**Style Attribute:**
 
 Inline style attributes are always removed after rendering (e.g. within `<table>` tag). I have not identified the source of this outcome. This outcome can be seen using "inspect" tool on Chrome, inspect this page by doing <kbd>&#8984;</kbd> or <kbd>CTRL</kbd>+<kbd>⌥</kbd>+<kbd>C</kbd>.  
 
+<br/>
 <table style="width:100%">
   <tr>
     <td colspan="2" align="center">
@@ -31,14 +31,17 @@ Inline style attributes are always removed after rendering (e.g. within `<table>
     </td>
   </tr>
 </table>
+<br/>
 
-> **table:**
+> **Table:**
 >
 > Locate the `<table>` tag and notice that the style attribute does not show on this  particular element `<table style="width:100%">`; some Github function is overriding this attribute.  
 >
 > So to maintain equal table sizes throughout a README, I kept sentences as long as possible to max out the table width within a README `<article>` tag.    
 >
 > Hence I could not use the style attribute to add rounded corners to the tables on any README.  
+
+<br/>
 
 **Table of Contents:**
 
@@ -52,8 +55,8 @@ For this link jump to work, the # portion of the url must in be **lowercases** a
 
 Also note that, by doing :o: \#\#\#Hello There (having anything in front of the header) will not work either. In more detail, the following does not work:
 
-:o: \#\#\#[Hello]\(https://url#hello)
-
-\#\#\#:o: [Hello]\(https://url#hello)
-
-\#\#\#:o: [Hello]\(https://url#:\o:-hello)
+>:o: \#\#\#[Hello]\(https://url#hello)
+>
+>\#\#\#:o: [Hello]\(https://url#hello)
+>
+>\#\#\#:o: [Hello]\(https://url#:\o:-hello)
