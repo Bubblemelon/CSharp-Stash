@@ -111,6 +111,26 @@
 
 ### :o: [Selection Sort](https://github.com/Bubblemelon/algorithms/tree/master/Sorting%20Algorithms#selection)  
 
+<table style="width:100%">
+  <tr>
+    <td colspan="2" align="center">
+      i
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2" nowrap>
+      i
+    </td>
+    <td align="left">
+      i
+    </td>
+  </tr>
+  <tr>
+    <td>
+      i
+    </td>
+  </tr>
+</table>
 
 ## Complementing Classes  
 
@@ -134,7 +154,7 @@ Inline style attributes are always removed after rendering (e.g. within `<table>
 
 > Hence I could not use the style attribute to add rounded corners to the tables on this README.  
 
-**Table of Contents:** 
+**Table of Contents:**
 
 Anchor links that jump to a section of a page (table of contents) only work on headers! Not any link can have this functionality, e.g.  
 
