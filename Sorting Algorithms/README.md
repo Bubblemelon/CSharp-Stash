@@ -3,6 +3,7 @@
 #### This has been moved this to the [Wiki section](https://github.com/Bubblemelon/algorithms/wiki/Sorting-Algorithms) of this repository.  
 <br/>
 The following are some reasons why and what I have discovered before making this decision.  
+<br/>
 
 ## Notes on using CSS and HTML in Markdown files on Github:  
 
@@ -53,7 +54,7 @@ Additionally this only works on the wiki section of a repository or at the root 
 
 For this link jump to work, the # portion of the url must in be **lowercases** and for consistency name the tag like so: e.g. \#\#\#Hello There , url#hello\ or url#hello-there .     
 
-Also note that, by doing :o: \#\#\#Hello There (having anything in front of the header) will not work either. In more detail, the following does not work:
+Also note that, by doing :o: \#\#\#Hello There (having anything in front of the header) will not work either. In more detail, the following does not work:  
 
 >:o: \#\#\#[Hello]\(https://url#hello)
 >
