@@ -23,7 +23,7 @@ public class LinearSearch
   {
     int result_index = -1;
 
-    Console.WriteLine( "The linear searching this unsorted array: [ {0} ]" ,string.Join(", ", array ) );
+    Console.WriteLine( "The linear searching this unsorted array: [ {0} ]" ,string.Join(", ", array) );
 
     for( int i = 0; array.Length > i; i++ )
     {
@@ -31,7 +31,7 @@ public class LinearSearch
       if( array[i] == query )
       {
         result_index = i;
-        Console.WriteLine( "The query subject: {0} is at index [{1}] of {2}", query, result_index, string.Join(", ", array ));
+        Console.WriteLine( "The query subject: {0} is at index [{1}] of {2}", query, result_index, string.Join(", ", array) );
         break;
       }
 
@@ -39,7 +39,7 @@ public class LinearSearch
 
     if( result_index == -1 )
     {
-      Console.WriteLine( "The query subject: {0} was not found in: {1}", query, string.Join(", ", array ));
+      Console.WriteLine( "The query subject: {0} was not found in: {1}", query, string.Join(", ", array) );
     }
 
     return result_index;

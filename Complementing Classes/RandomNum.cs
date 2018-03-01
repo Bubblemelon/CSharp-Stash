@@ -27,6 +27,10 @@ public class RandomNum
     // initialize and instantiate Random Class object
     Random rnd = new Random();
 
+    // The random generator
+    // is seeded from the system clock
+    // https://stackoverflow.com/questions/2706500/how-do-i-generate-a-random-int-number-in-c
+
     for( int i = 0 ; i < array.Length; i++ )
     {
       // Next(MAX) Returns a non-negative random integer
@@ -94,7 +98,7 @@ public class RandomNum
 
     // Sequential range from min to max
     // and then select their squares.
-    IEnumerable<int> squares = Enumerable.Range(min, max).Select(x => x * x);
+    // IEnumerable<int> squares = Enumerable.Range(min, max).Select(x => x * x);
 
 
     return range;

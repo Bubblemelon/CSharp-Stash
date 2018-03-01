@@ -28,7 +28,7 @@ public class InsertionSort
   private InOut<int> inOut = new InOut<int>(); // private by default if not specified
 
 
-  public void insertsort( int[] numbers )
+  public int[] insertsort( int[] numbers )
   {
 
     // printing arrays https://stackoverflow.com/questions/3700448/how-to-print-contents-of-array-horizontally
@@ -85,6 +85,18 @@ public class InsertionSort
     } //for
 
     inOut.arrayListPrint( numbersList );
+
+    Console.WriteLine( "Converting the ArrayList to an Array." );
+
+    // Copies the elements of the ArrayList to an int array.
+    numbers = (int[])numbersList.ToArray( typeof( int ) ); // int[] array cast
+
+    // Info on ToArray Usage:
+    // https://msdn.microsoft.com/en-us/library/fcyyh2hb(v=vs.110).aspx
+
+
+    return numbers;
+
   } //insertsort()
 
 
@@ -124,13 +136,13 @@ public class InsertionSort
   }
 
 
- public static void Main()
- {
-   InsertionSort insertS = new InsertionSort();
+ // public static void Main()
+ // {
+   // InsertionSort insertS = new InsertionSort();
 
-   RandomNum rNA = new RandomNum();
+   // RandomNum rNA = new RandomNum();
 
-   ExecutionTimer eT = new ExecutionTimer(); // to test execution time
+   // ExecutionTimer eT = new ExecutionTimer(); // to test execution time
 
    // int[] array = new int[] { 3,1,4,6,7,5,2 };
 
@@ -138,21 +150,21 @@ public class InsertionSort
 
    // random number generator for array (initialize & instantiate)
    //int[] test = rNA.RandNumArrGen(5, 100);
-   int[] test2 = rNA.RandNumArrGen(10, 100);
+   // int[] test2 = rNA.RandNumArrGen(10, 100);
    // int[] test3 = rNA.RandNumArrGen(10, 25);
    //
-
+   // int[] holder = new int[10];
 
    // ***** Tests for insertsort() *****
    //
    // insertS.insertsort( array );
    //
-   eT.startTimer();
-
-   insertS.insertsort( test2 );
-
-   eT.stopTimer();
-   eT.elapsedTime();
+   // eT.startTimer();
+   //
+   // insertS.insertsort( test2 );
+   //
+   // eT.stopTimer();
+   // eT.elapsedTime();
 
 
 
@@ -162,7 +174,7 @@ public class InsertionSort
    //
    // eT.startTimer();
    //
-   // insertS.insertsort1( test2 );
+   // holder = insertS.insertsort( test2 );
    //
    // eT.stopTimer();
    // eT.elapsedTime();
@@ -180,6 +192,6 @@ public class InsertionSort
 
 
 
- } //main
+ // } //main
 
 } //class
