@@ -238,46 +238,7 @@ public Func<int,bool> operationSeqGen()
 
 
 
-}
-
-
-
-
-/*
- * This function prints out integers in IEnumerable
- *
- */
-  public void showEnumSeq( IEnumerable<int> squence )
-  {
-
-    foreach ( int num in squence )
-    {
-      Console.WriteLine(num);
-    }
-
-
-  }
-
-
-  /*
-   * This function prints out the elements in an array !
-   *
-   */
-  public void showArrayValues( int[] arr )
-  {
-
-    System.Console.WriteLine("Output: ");
-
-    foreach (int i in arr)
-    {
-        System.Console.Write("{0} ", i);
-        //System.Console.Write("\n");
-
-    }
-
-    System.Console.Write("\n");
-
-  }
+} //main
 
   /* To Test functions in this class
    *
@@ -302,4 +263,4 @@ public Func<int,bool> operationSeqGen()
   // }
 
 
-}
+} //class
