@@ -3,6 +3,16 @@ using System.Text;
 using System.IO;
 using System.Collections;
 
+using System.Collections.Generic;
+// https://stackoverflow.com/questions/14428084/ienumerable-cannot-be-used-with-type-arguments
+//
+// This is to resolve the following:
+//
+// IO.cs(191,28): error CS0308: The non-generic type `System.Collections.IEnumerable'
+// cannot be used with the type arguments
+
+
+
 /* Generic class with generic functions & NON-generic functions :
  *
  * Some simple stdin and stdout functions
@@ -193,7 +203,7 @@ Return Value
 
     foreach ( int num in squence )
     {
-      Console.WriteLine(num);
+      Console.Write(num + " ");
     }
 
 
@@ -218,6 +228,24 @@ Return Value
     System.Console.Write("\n");
 
   }
+
+  public void printMultiArray( int[,] myArr )
+  {
+
+   System.Collections.IEnumerator myEnumerator = myArr.GetEnumerator();
+   int i = 0;
+   int cols = myArr.GetLength( myArr.Rank - 1 );
+   while ( myEnumerator.MoveNext() )  {
+      if ( i < cols )  {
+         i++;
+      } else  {
+         Console.WriteLine();
+         i = 1;
+      }
+      Console.Write( "\t{0}", myEnumerator.Current );
+   }
+   Console.WriteLine();
+}
 
 
 }// class bracket

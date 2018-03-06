@@ -8,7 +8,7 @@ public class RandomNum
 
   // Public Variables
 
-  IEnumerable<int> ranged;
+  IEnumerable<int> ranged; // used in sequenceArrGen()
 
   /*
    * Generates random numbers in an array of specified size "arrSize"
@@ -248,15 +248,6 @@ public Func<int,bool> operationSeqGen()
   // public static void Main()
   // {
   //
-  //   RandomNum RN = new RandomNum();
-  //
-  //   //rNA.showArrayValues( rNA.RandNumArrGen(10, 100) );
-  //
-  //   IEnumerable<int> sample = RN.sequenceIEnumGen(1,10);
-  //   RN.showEnumSeq( sample );
-  //
-  //   int[] someArray = RN.sequenceArrGen( 1,9, RN.operationSeqGen() );
-  //   RN.showArrayValues( someArray );
   //
   //
   //
