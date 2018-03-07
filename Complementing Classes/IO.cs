@@ -259,5 +259,7 @@ Return Value
    Console.WriteLine(); // so that words do not proceed after the last element!
 }
 
+// prints a jagged array of one dimension:
+
 
 }// class bracket
