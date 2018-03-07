@@ -103,8 +103,8 @@ public class JaggedArrayExample
 
     // IMPROVEMENT:
     //
-    // (1) jArrayEx needs to be a generic function
-    // (2) after the completion of jArrayEx, it should be placed in IO.cs
+    // (1) jArrayPrint() needs to be a generic function
+    // (2) after the completion of jArrayPrint(), it should be placed in IO.cs
 
 
   }
