@@ -233,18 +233,30 @@ Return Value
   {
 
    System.Collections.IEnumerator myEnumerator = myArr.GetEnumerator();
+
    int i = 0;
-   int cols = myArr.GetLength( myArr.Rank - 1 );
+
+   int cols = myArr.GetLength( myArr.Rank - 1 ); // two dimensions - 1 = column
+
+   Console.Write( "Element:" );
+   Console.Write( "\tFrequency:" );
+   Console.WriteLine();
+
    while ( myEnumerator.MoveNext() )  {
-      if ( i < cols )  {
+      if ( i < cols )
+      {
          i++;
-      } else  {
-         Console.WriteLine();
+      }
+      else
+      {
+         Console.WriteLine(); // next row
          i = 1;
       }
+
       Console.Write( "\t{0}", myEnumerator.Current );
    }
-   Console.WriteLine();
+
+   Console.WriteLine(); // so that words do not proceed after the last element!
 }
 
 
