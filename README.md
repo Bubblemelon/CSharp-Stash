@@ -9,6 +9,5 @@ Unlike Java which is an interpreted language, both C# and C++ are compiled langu
 C# aims to combine the computing power of C++ with the programming ease of Visual Basic.  
 
 [Differences between Visual C# and C#](https://softwareengineering.stackexchange.com/questions/237153/what-is-the-difference-between-c-and-visual-c)  
-=250x
 
-![C# Image](http://gph.is/2IbNskk=250x)
+![C# Image](http://gph.is/2IbNskk =250x)
