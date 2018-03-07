@@ -10,4 +10,4 @@ C# aims to combine the computing power of C++ with the programming ease of Visua
 
 [Differences between Visual C# and C#](https://softwareengineering.stackexchange.com/questions/237153/what-is-the-difference-between-c-and-visual-c)  
 
-![C# Image](http://gph.is/2IbNskk =250x)
+![C# Moving Gif](https://media.giphy.com/media/1ZsKpy8j5MlKPoLUri/giphy.gif =250x)
