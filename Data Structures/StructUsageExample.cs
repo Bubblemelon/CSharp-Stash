@@ -47,6 +47,11 @@ public class StructUsageExample
     Console.WriteLine( cw1.Color != "" ); // True
 
 
+    // IMPROVEMENT
+    //
+    // Example on indexers !!!
+
+
 
   }
 }
