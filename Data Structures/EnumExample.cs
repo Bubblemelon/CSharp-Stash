@@ -13,8 +13,10 @@ namespace EnumExampleNamespace
    * Creates a variable with a fixed set of possible values, .e.g day of the week.
    *
    * Best practice:
-   * Define enum directly within a namespace so,
+   * Define enum directly within a namespace (to organize many classes) so,
    * that all classes in that namespace will have access to it.
+   *
+   * How to use Namespaces: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/namespaces/using-namespaces
    *
    * Otherwise defined: within the global scope or within a class scope !
    * - Cannot declare more than one enum within a class
