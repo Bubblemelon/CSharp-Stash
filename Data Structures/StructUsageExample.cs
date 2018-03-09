@@ -30,12 +30,18 @@ public class StructUsageExample
     //
     // }
 
+    // Demonstrates the use a struct's indexer
+    Menu menu = new Menu();
+
+
+
+
     // This uses the custom struct costructor:
     //
     Food f = new Food( "Yummy Jelly", 5.0m );
     Console.WriteLine( "{0} costs {1} dollars.", f.name, f.cost );
 
-
+    // The Wheel struct is within a class:
     Car c = new Car(); //Instantiate the class
     Car.Wheel cW = new Car.Wheel("green");
 

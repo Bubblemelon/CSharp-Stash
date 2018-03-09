@@ -103,6 +103,37 @@ namespace StructExample
 
    }// Food
 
+   // Demonstrate the creation of an indexer
+   public struct Menu
+   {
+     // Menu struct field
+     private Food[] item;
+
+     private int length;
+
+     // A custom constructor:
+     public Menu(int x)
+     {
+       this.length = x;
+
+       this.item = new Food[] {}
+     }
+
+     // This is an indexer:
+     public Food this[ int index ]
+     {
+       get{ return this.item[index]; }
+       set{ this.item[index] = value; }
+     }
+
+     // Menu property:
+     public int size
+     {
+       get{ return item.Length; }
+     }
+
+   }
+
    // a struct nested in a class that's also inside the namespace
    public class Car
    {
