@@ -134,6 +134,8 @@ namespace StructExample
 
    }
 
+   //
+
    // a struct nested in a class that's also inside the namespace
    public class Car
    {
