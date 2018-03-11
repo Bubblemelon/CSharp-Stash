@@ -135,6 +135,10 @@ namespace StructExample
    }
 
    //
+   // main function needs a loop to add
+   // food struct items onto an array
+   //
+   // Delete after doing new?
 
    // a struct nested in a class that's also inside the namespace
    public class Car
