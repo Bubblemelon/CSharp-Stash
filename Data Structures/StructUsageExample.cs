@@ -30,10 +30,31 @@ public class StructUsageExample
     //
     // }
 
-    // Demonstrates the use a struct's indexer
-    Menu menu = new Menu();
+    /////////////////////////////////////////////
+    // Demonstrates the use a struct's indexer //
+    /////////////////////////////////////////////
 
+    Menu menu = new Menu(5);
 
+    // Increment Food price
+    decimal cost_increment = 1.0m;
+
+    //
+    // add objects of the type Food (a struct )
+    // into Menu's Food type array
+    //
+    for( int i = 0; menu.size > i; i++ )
+    {
+      menu[i] = new Food( "Food " + i.ToString() , cost_increment );
+
+      cost_increment++;
+    }
+
+    // Prints the the menu
+    for( int j = 0; menu.size > j; j++ )
+    {
+      Console.WriteLine( menu[j].name + menu[j].cost );
+    }
 
 
     // This uses the custom struct costructor:
