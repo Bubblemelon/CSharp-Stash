@@ -27,9 +27,20 @@ public class InOut<T>
   //  e.g. cannot take input "10" ; this is valid "9" ( one digit input )
   // keyboard input e.g. Numbers 1,2,3,... -> ascii int -> char -> int
   //
-  public int AskUser<U>()
+  public int AskUser<U>( string my_message )
   {
-    string message = "Your input is '{0}' and in hexadecimal (ascii) is 0x{1:x4}.";
+    string message = "";
+
+    if (my_message == null)
+    {
+      message = "Your input is '{0}' and in hexadecimal (ascii) is 0x{1:x4}.";
+
+    }
+    else
+    {
+      message = my_message;
+    }
+
 
     int something = Console.Read();  //user inputs are in ascii
     // Type: System.Int32
@@ -57,8 +68,10 @@ public class InOut<T>
   // NON-generic function !
   // THIS functions will ask for more than one digit input e.g. 10
   //
-  public int AskUserMore()
+  public int AskUserMore( string message )
   {
+    Console.WriteLine( message );
+
     string userInput = Console.ReadLine();
     // Type: System.String
     // The next line of characters from the input stream, or null if no more lines are available.
