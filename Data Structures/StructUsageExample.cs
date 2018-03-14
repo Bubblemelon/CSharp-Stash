@@ -98,6 +98,15 @@ public class StructUsageExample
 
     Console.WriteLine("\nThis menu has {0} choices", menu.size);
 
+    // Can't do the following:
+    //
+    // foreach( Food element in menu )
+    // { ... }
+    //
+    // Needs to implement the IEnumerator Interface !
+    //
+    // Look at: howtoforeach.cs
+
     ////////////////////////////////////////////////////
     // End of Demonstrates the use a struct's indexer //
     ////////////////////////////////////////////////////

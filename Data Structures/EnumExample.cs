@@ -1,5 +1,5 @@
 using System;
-using System.Collections;
+using System.Collections; // for enum
 using System.ComponentModel; // for Description
 using System.Diagnostics; // for Debug e.g. Debug.WriteLine() - does not show on terminal
 using System.Reflection; // for BindingFlags
@@ -9,6 +9,11 @@ namespace EnumExampleNamespace
 {
   /*
    * Known as An enumeration type, enum or enumeration.
+   *
+   * To not be confused with IEnumerable and IEnumerator.
+   * Better explaination: https://stackoverflow.com/questions/558304/can-anyone-explain-ienumerable-and-ienumerator-to-me
+   * Summarized explaination: https://stackoverflow.com/questions/619564/what-is-the-difference-between-ienumerator-and-ienumerable
+   *
    *
    * Creates a variable with a fixed set of possible values, .e.g day of the week.
    *
