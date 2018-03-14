@@ -43,7 +43,8 @@ public static class EnumExtensions
 
     // ERROR: (solved)
     // EnumExtensions.cs(17,24): error CS1106: `EnumExtensions<T>.GetDescription(this T)': Extension methods must be defined in a non-generic static class
-    // moving where T : struct to GetDescription<T>() function
+    // Solved by adding "where T : struct" to GetDescription<T>() function
+    // because the class cannot be generic
 
     // This is invalid (The Error):
     // `EnumExampleNamespace.Clockface' does not contain a definition for `EnumExtensions'
@@ -54,7 +55,7 @@ public static class EnumExtensions
 
     Console.WriteLine( Clockface.four.GetDescription() ); // output: 4
     // compile this way:
-    // mcs EnumExtensions.cs EnumExample.cs <-- sot that EnumExampleNamespace can be found !
+    // mcs EnumExtensions.cs EnumExample.cs <-- so that EnumExampleNamespace can be found !
     // run like this:
     // mono EnumExtensions.exe
 

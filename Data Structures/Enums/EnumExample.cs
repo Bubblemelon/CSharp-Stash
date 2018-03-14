@@ -17,6 +17,15 @@ namespace EnumExampleNamespace
    *
    * Creates a variable with a fixed set of possible values, .e.g day of the week.
    *
+   * Each member of an enum has a name and a value.
+   * The name is of type string and is defined in the braces, e.g. as Sun or Mon. (such as below in enum Day)
+   *
+   * By default, the value is an integer.
+   * If this value is not specified for each member, the members are assigned
+   * with incremental values starting with 0.
+   *
+   * e.g. Day.Sun is equal to 0 and Day.Mon is equal to 1.
+   *
    * Best practice:
    * Define enum directly within a namespace (to organize many classes) so,
    * that all classes in that namespace will have access to it.
@@ -128,7 +137,10 @@ namespace EnumExampleNamespace
 
   public static class EnumExample
   {
-
+    // An extension method is:
+    //
+    //
+    //
     // This extension function must be static and class must be static as well
     // Otherwise:
     // Extension methods must be defined in a non-generic static class
@@ -156,21 +168,36 @@ namespace EnumExampleNamespace
     // not the constructor
      public static void enumEx()
      {
+       // I do not remember what I was going to use this for
 
      }// function
 
 
 
-     // public static void Main()
-     // {
-     //   Console.WriteLine( Clockface.twelve.GetDescription() ); // output: 12
-     //   Console.WriteLine( Clockface.eleven.GetDescription() ); // output: 11
-     //
-     //   compile this way:
-     //   mcs EnumExample.cs
-     //   run like this:
-     //   mono EnumExample.exe
-     // }
+     public static void Main()
+     {
+       // compile this way:
+       // mcs EnumExample.cs
+       // run like this:
+       // mono EnumExample.exe
+
+       Console.WriteLine( Clockface.twelve.GetDescription() ); // output: 12
+       Console.WriteLine( Clockface.eleven.GetDescription() ); // output: 11
+
+       // Set an enum variable by name.
+       Day myfavoriteDay = Day.Fri; // output: Fri
+
+       Console.WriteLine( myfavoriteDay );
+
+       // Set an enum variable by value.
+       Day myfreeDay = (Day)4; // Wed
+
+       Console.WriteLine( myfreeDay ); // output: Wed
+
+
+
+
+     }
 
 
 
