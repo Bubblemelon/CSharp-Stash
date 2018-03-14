@@ -5,6 +5,20 @@
  * Internal: (Default if not specified) The type is available to any
  *           code within the same assembly only.
  *
+ * Nested classes or structs default to private.
+ * Regardless of whether the outer type is a class or a struct,
+ * nested types default to private;
+ * they are accessible only from their containing type i.e. From the Container Class.
+ *
+ *   class Container
+ *   {
+ *       class Nested
+ *       {
+ *           Nested() { }
+ *       }
+ *  }
+ *
+ *  https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/nested-types
  */
 struct Rectangle
 {

@@ -96,6 +96,11 @@ namespace StructExample
    // Demonstrate the creation of an indexer
    //
    // Also demonstrates how to use an array field of a type created from a struct
+   //
+   // A Struct using a type created by a struct:
+   // https://stackoverflow.com/questions/11460103/nested-struct-as-members-in-a-class
+   //
+   // e.g. Type Food (created using a struct) is used within the Menu struct
    public struct Menu
    {
      // Menu struct field
