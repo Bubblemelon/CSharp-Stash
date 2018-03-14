@@ -76,23 +76,13 @@ namespace StructExample
      public char initial;
    } // Person
 
-   // public struct Pet
-   // {
-   //   // This is the custom constructor.
-   //   public Pet(int playfulness, string breed)
-   //   {}
-   //
-   //
-   //   public int Strength;
-   //   public string Bean;
-   // }
 
    // a struct inside the namespace with a custom constructor
    public struct Food
    {
      // these are struct fields:
      public string name;
-     public decimal cost;
+     public decimal cost; // How to use decimals: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/decimal
 
      // This is a custom constructor
      public Food(string n, decimal c)
@@ -104,6 +94,8 @@ namespace StructExample
    }// Food
 
    // Demonstrate the creation of an indexer
+   //
+   // Also demonstrates how to use an array field of a type created from a struct
    public struct Menu
    {
      // Menu struct field
