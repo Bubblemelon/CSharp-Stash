@@ -139,7 +139,11 @@ namespace EnumExampleNamespace
   {
     // An extension method is:
     //
-    //
+    // Allows for the addition of methods to existing types without creating
+    // a new derived type, recompiling, or otherwise modifying the original type.
+    // Extension methods are a special kind of static method, but they are
+    // called as if they were instance methods on the extended type.
+    // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods
     //
     // This extension function must be static and class must be static as well
     // Otherwise:
