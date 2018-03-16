@@ -47,11 +47,9 @@ public class HashTableUsage
       Console.WriteLine( "The definition of {0} is {1}\n", (string)key, dictionary[key].ToString() );
     }
 
-    // IMPROVEMENT:
-    //
-    // Resolve unexplained behaviour:
-    //
-    // OUTPUT:
+
+
+    // Notice the following OUTPUT:
     //
     // Printing the dictionary:
     //
@@ -61,8 +59,15 @@ public class HashTableUsage
     //
     // The definition of Chicanery is The use of deception or suberfuge to achieve one's purpose.
     //
+    //  Explaination:
     //
-    // For some reason Beamish is printed first than Arduous, although Arduous was added first to the hashtable.
+    // Even though the data was inserted into the Hashtable
+    // in the order "Arduous," "Beamish," "Chicanery",
+    //
+    // The Hashtable Class's [Hash Function] has caused a different order
+    // when retrieving the values.
+    // i.e. GetHashCode(), which is defined in the System.Object class
+    //
 
 
   } // main
