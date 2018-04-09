@@ -57,6 +57,7 @@ namespace StructExample
    *
    * Accessors:
    * (1) A get accessor to provide read access to a field.
+   * (2) A set accessor to provide write access to a field.
    *
    * Possible to initilize like so:
    * public string FirstName { get; set; } = "Jane";  <-- can't do that within structs

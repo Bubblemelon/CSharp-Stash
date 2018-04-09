@@ -66,7 +66,7 @@ public class HashTableUsage
     //
     // The Hashtable Class's [Hash Function] has caused a different order
     // when retrieving the values.
-    // i.e. GetHashCode(), which is defined in the System.Object class
+    // i.e. GetHashCode(), is the default hash function defined in the System.Object class
     //
 
 
