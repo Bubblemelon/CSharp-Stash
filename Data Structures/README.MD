@@ -112,7 +112,7 @@ This notation describes the performance of an algorithm.
 
 **This graph below shows several common performance expressions i.e. time complexities**:  
 
-![Image from edX](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/14ecb5fd6549a34e1b4ab327831b088c/asset-v1:Microsoft+DEV204.3x+4T2017+type@asset+block/Big_O_Chart.PNG=50x50)  
+![Image from edX](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/14ecb5fd6549a34e1b4ab327831b088c/asset-v1:Microsoft+DEV204.3x+4T2017+type@asset+block/Big_O_Chart.PNG =50x50)  
 
 Graph Legend:
 
