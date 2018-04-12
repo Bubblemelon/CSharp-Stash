@@ -16,11 +16,11 @@ A summary of ...
 
 -----
 
-### [Introduction]()  
+## [Introduction]()  
 
 It is the act of evaluating the rate at which an algorithm will operate based on the range of inputs.   
 
-For example,  
+**e.g.**
 
 Binary Search is faster than Linear Search. This may not always be the case:  
 
@@ -45,9 +45,9 @@ Therefore, the larger the input, the more time it takes for the search.
 | Average Case| Linear Search: If the search term was around in the middle of the array |
 | Worst Case | Linear Search: If the search term was found at the end of the array i.e. The maximum amount of time that the search could take |
 
-Normally, the average case is used to determine the algorithm that will produce the most reasonable time based on expected input sizes.
+Normally, the average case is used to determine the algorithm that will produce the most reasonable time based on expected input sizes.  
 
-### [Algorithm Analysis]()  
+## [Algorithm Analysis]()  
 
 To determine the performance of an algorithm:
 
@@ -94,7 +94,7 @@ Performing the analysis saves from using trial and error with the [steps mention
 1. Know what operations take place.  
 2. Know the amount of time an operation takes.    
 
-### [Big O Asymptotic Notation]()  
+## [Big O Asymptotic Notation]()   
 
 Also known as the _Bachmann-Landau Notation_, named after Paul Bachmann and Edmond Landau.   
 
@@ -120,11 +120,19 @@ Graph Legend:
 | :--: | :--------: | :----: |  
 | n    | input size | x-axis |
 
-The plots on the graph explained:
+Two lines on the graph briefly explained:
 
-For example, the line 100n is a linear plot. That means that as the size of n increases, the time required goes up in a linear fashion. This is because the only operation in the function takes a preset amount of time so that preset time is multiplied by the size of n.
+_100n_ is a linear expression. As the size of _n_ increases, performance time linearly increases. It is the time of all the steps in the an algorithm (one iteration) multiplied by _n_.
 
-The worst case scenario in this graph is the function 2n. That is to say that we raise 2 to the power of the value contained in n. As you can see, for smaller values, it is a relatively shallow curve until we hit about 8 on the X axis, at which point the time jumps significantly.
+The expression _2^n_ would be considered the worst case among the other expressions on the graph. Since 2 is raised to the power of _n_. Some where between 5 to 10 of value n, approx. at 8 on the x-axis, the time of of _2^n_ increases dramatically.
+
+The balance point:
+
+The points at which two graph lines intersect.
+
+**e.g.** Looking at _100n_ and _2^n_ again, the balance point is about when _n = 10_.
+
+_2^n_ performs better when _n_ is between 0 to 10. While _100n_ performs better than _2^n_ at any value of _n_ after 10. Additionally, any time complexity expression will perform better than _2^n_ as long as it is equal or faster than _100n_.  
 
 **The following table shows how _time_ grows in relation to how _n_ increases**:
 
