@@ -5,7 +5,7 @@ A summary of ...
 > Microsoft: DEV204.3x  
 > Algorithms and Data Structures in C#
 
-... course section.
+... course section.  
 
 #### [Contents]():  
 
@@ -14,6 +14,10 @@ A summary of ...
 - [Big O Asymptotic Notation]()
 - [Analysis Examples]()
 
+<br/>
+
+**Recommended reference**:  
+https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation  
 
 -----
 
