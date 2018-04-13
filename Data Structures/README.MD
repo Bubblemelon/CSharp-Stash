@@ -79,9 +79,9 @@ Procedure for Binary Search:
 3. Perform the comparison.  
 4. If not found, half the array and then repeat 1 to 3. Otherwise, return the search term.
 
-Procedure for Linear Search:  
+##### [Procedure for Linear Search](#procedure-for-linear-search):  
 
-1. Compare at index zero.  
+1. Start comparing at index zero.  
 2. If not found, increment to the next index. Otherwise, return the search term.   
 
 Linear Search will be more efficient/faster than Binary Search for small input sizes up to a certain point.
@@ -189,7 +189,7 @@ Analysing Bubble Sort, Selection Sort and Linear Search.
             Inner loop: Iterates from the beginning to the end of the array. Responsible for doing the checks and then swaps.
           </li>
         </ul>
-        The comparison and the swaps take a constant finite amount of time.
+        The comparison and the swaps takes a fix amount of time.
         <br/><br/>
         An iteration of the entire array is done when the outer loop iterates.
       </td>
@@ -250,48 +250,14 @@ Analysing Bubble Sort, Selection Sort and Linear Search.
   </tbody>
 </table>
 
-**Linear Search**:
+**Linear Search**:  
 
-<table>
-  <tbody>
-    <tr>
-      <th>Procedure</th>
-      <th>Procedure Explained</th>
-      <th>Analysis Explained</th>
-    </tr>
-    <tr>
-      <td>
-        <ol>
-          <li>
-            The current element is compared with all other elements (except itself) in the array, starting from index 0.
-          </li>
-          <li>
-            A swap is made if the comparing element (the minimum in the unsorted portion) is smaller than the current, these two switch index positions.
-          </li>
-          <li>
-            The sorted port of the array grows from index 0 up to the current element being compared.
-          </li>
-          <li>
-            Steps 1. and 2. are repeated until the iteration reaches the end of the array.
-          </li>
-        </ol>
-      </td>
-      <td>
-        Nested loops:
-        <ul>
-          <li>
-            Outer loop: Keeps track of the current element in the array.
-          </li>
-          <li>
-            Inner loop: Compares the current element with all other elements in the array by iterating through the unsorted portion and finds the minimum in the unsorted portion. Does the swaps if the minimum is smaller than the current.
-          </li>
-        </ul>
-      </td>
-      <td>
-        The time complexity of a Selection Sort is <code>O(n^2)</code>.
-        <br/><br/>
-        This is the same as Bubble Sort due to the loop and its nest loop in the Selection Sort procedure.
-      </td>
-    </tr>
-  </tbody>
-</table> 
+[Referring to the Linear Search procedure]([Procedure for Linear Search](#procedure-for-linear-search):
+
+Receiving the search term and accessing the current index does not require processing power, this is at a constant time of `O(1)`.  
+
+If the first element of the array happens to be the search term, then its time complexity would be `0(1)` since the algorithm did not have to increment and iterate to the next element. This is also its best case.  
+
+Making the comparison and incrementing `i` (the index number holder), _does require processing power_ and takes a fixed certain amount of time.
+
+The time complexity for a Linear Search is `O(n)` because the procedure is handled by a loop that iterates through the entire array from index 0 to the last element i.e. the size of _n_. `0(n)` also is its worst case if the search term was at the end of the array, meaning that the iteration would need to iterate a total of size _n_.  
