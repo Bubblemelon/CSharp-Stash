@@ -256,7 +256,7 @@ Analysing Bubble Sort, Selection Sort and Linear Search.
 
 **Linear Search**:  
 
-[Referring to the Linear Search procedure]([Procedure for Linear Search](#procedure-for-linear-search):
+[Referring to the Linear Search procedure](Procedure for Linear Search](#procedure-for-linear-search) :
 
 Receiving the search term and accessing the current index does not require processing power, this is at a constant time of `O(1)`.  
 
