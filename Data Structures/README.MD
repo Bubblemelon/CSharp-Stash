@@ -11,7 +11,8 @@ A summary of ...
 
 - [Introduction]()
 - [Algorithm Analysis]()
-- [Big O Asymptotic Notation]()  
+- [Big O Asymptotic Notation]()
+- [Analysis Examples]()
 
 
 -----
@@ -67,7 +68,7 @@ Algorithm analysis can be a futile task based on computing hardware resources an
 
 On a modern computer CPUs with multiple cores and lots of memory -  _most input sizes will produce times so close that they are not detrimental to a program's operation and speed_.  
 
-**Algorithm Analysis becomes important when**:
+### Algorithm Analysis becomes important when:
 
 **A. The size of the input is significantly large**.   
 
@@ -104,7 +105,7 @@ Big O is a mathematical notation used in algorithm analysis. It is used in deter
 
 It is used to classify algorithms according to _limits on runtime or input size_. This can show whether or not an algorithm is not suitable. There may be several reasons, either its performance will take too long to complete and/or is not capable of handling the input size efficiently.  
 
-** O( _ ) **
+### O( _ )  
 
 This notation describes the performance of an algorithm.   
 
@@ -128,7 +129,7 @@ The expression _2^n_ would be considered the worst case among the other expressi
 
 The balance point:
 
-The points at which two graph lines intersect.
+The points at which two graph lines intersect. To compare different algorithms.
 
 **e.g.** Looking at _100n_ and _2^n_ again, the balance point is about when _n = 10_.
 
@@ -145,3 +146,152 @@ _2^n_ performs better when _n_ is between 0 to 10. While _100n_ performs better 
 **Complexities in graph form**:
 
 ![Big O Expression Graph Form](http://blog.benoitvallon.com/img/2016-03-12-sorting-algorithms-in-javascript/big-o-complexity.png)  
+
+## [Analysis Examples]()
+
+Looking at the time complexity of an algorithm allows the comparison of different algorithms. Finding the actual performance time completion between two algorithms isn't necessary.
+
+Analysing Bubble Sort, Selection Sort and Linear Search.
+
+**Bubble Sort**:
+
+<table>
+  <tbody>
+    <tr>
+      <th>Procedure</th>
+      <th>Procedure Explained</th>
+      <th>Analysis Explained</th>
+    </tr>
+    <tr>
+      <td>
+        <ol>
+          <li>
+            Starting from index 0, compare adjacent elements.
+          </li>
+          <li>
+            Check if right element is larger than left element. If true then swap.
+          </li>
+          <li>
+            Repeat steps 1 and 2, by incrementing to the next element until the last element on the array. (There are n-1 checks)
+          </li>
+          <li>
+            Check after each iteration if a swap was made. If none, then n elements are sorted.
+          </li>
+        </ol>
+      </td>
+      <td>
+        Nested loops:
+        <ul>
+          <li>
+            Outer loop: Makes sure that the array is sorted before exiting.
+          </li>
+          <li>
+            Inner loop: Iterates from the beginning to the end of the array. Responsible for doing the checks and then swaps.
+          </li>
+        </ul>
+        The comparison and the swaps take a constant finite amount of time.
+        <br/><br/>
+        An iteration of the entire array is done when the outer loop iterates.
+      </td>
+      <td>
+        The time complexity of a Bubble Sort is <code>O(n^2)</code>.
+        <br/><br/>
+        Every time the outer loop iterates, a complete array iteration in the inner loop happens.
+        <br/><br/>
+        i.e. an iteration of the entire array is done when the outer loop iterates.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+**Selection Sort**:  
+
+<table>
+  <tbody>
+    <tr>
+      <th>Procedure</th>
+      <th>Procedure Explained</th>
+      <th>Analysis Explained</th>
+    </tr>
+    <tr>
+      <td>
+        <ol>
+          <li>
+            The current element is compared with all other elements (except itself) in the array, starting from index 0.
+          </li>
+          <li>
+            A swap is made if the comparing element (the minimum in the unsorted portion) is smaller than the current, these two switch index positions.
+          </li>
+          <li>
+            The sorted port of the array grows from index 0 up to the current element being compared.
+          </li>
+          <li>
+            Steps 1. and 2. are repeated until the iteration reaches the end of the array.
+          </li>
+        </ol>
+      </td>
+      <td>
+        Nested loops:
+        <ul>
+          <li>
+            Outer loop: Keeps track of the current element in the array.
+          </li>
+          <li>
+            Inner loop: Compares the current element with all other elements in the array by iterating through the unsorted portion and finds the minimum in the unsorted portion. Does the swaps if the minimum is smaller than the current.
+          </li>
+        </ul>
+      </td>
+      <td>
+        The time complexity of a Selection Sort is <code>O(n^2)</code>.
+        <br/><br/>
+        This is the same as Bubble Sort due to the loop and its nest loop in the Selection Sort procedure.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+**Linear Search**:
+
+<table>
+  <tbody>
+    <tr>
+      <th>Procedure</th>
+      <th>Procedure Explained</th>
+      <th>Analysis Explained</th>
+    </tr>
+    <tr>
+      <td>
+        <ol>
+          <li>
+            The current element is compared with all other elements (except itself) in the array, starting from index 0.
+          </li>
+          <li>
+            A swap is made if the comparing element (the minimum in the unsorted portion) is smaller than the current, these two switch index positions.
+          </li>
+          <li>
+            The sorted port of the array grows from index 0 up to the current element being compared.
+          </li>
+          <li>
+            Steps 1. and 2. are repeated until the iteration reaches the end of the array.
+          </li>
+        </ol>
+      </td>
+      <td>
+        Nested loops:
+        <ul>
+          <li>
+            Outer loop: Keeps track of the current element in the array.
+          </li>
+          <li>
+            Inner loop: Compares the current element with all other elements in the array by iterating through the unsorted portion and finds the minimum in the unsorted portion. Does the swaps if the minimum is smaller than the current.
+          </li>
+        </ul>
+      </td>
+      <td>
+        The time complexity of a Selection Sort is <code>O(n^2)</code>.
+        <br/><br/>
+        This is the same as Bubble Sort due to the loop and its nest loop in the Selection Sort procedure.
+      </td>
+    </tr>
+  </tbody>
+</table> 
