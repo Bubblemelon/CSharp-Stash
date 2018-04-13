@@ -256,8 +256,10 @@ Analysing Bubble Sort, Selection Sort and Linear Search.
 
 Receiving the search term and accessing the current index does not require processing power, this is at a constant time of `O(1)`.  
 
-If the first element of the array happens to be the search term, then its time complexity would be `0(1)` since the algorithm did not have to increment and iterate to the next element. This is also its best case.  
+If the first element of the array happens to be the search term, then its time complexity would be `0(1)` since the algorithm did not have to increment and iterate to the next element. This is considered the best case.    
 
-Making the comparison and incrementing `i` (the index number holder), _does require processing power_ and takes a fixed certain amount of time.
+Making the comparison and incrementing `i` (the index number holder), _does require processing power_ and takes a fixed certain amount of time.  
 
-The time complexity for a Linear Search is `O(n)` because the procedure is handled by a loop that iterates through the entire array from index 0 to the last element i.e. the size of _n_. `0(n)` also is its worst case if the search term was at the end of the array, meaning that the iteration would need to iterate a total of size _n_.  
+The time complexity for a Linear Search is `O(n)` because the procedure is handled by a loop that iterates through the entire array from index 0 to the last element i.e. the size of _n_.  
+
+`0(n)` is the time complexity for its worst case. This would apply if the search term was at the end of the array, meaning that the iteration would need to iterate a total of size _n_.  
