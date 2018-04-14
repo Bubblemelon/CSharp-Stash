@@ -90,6 +90,8 @@ Procedure for Binary Search:
 
 Linear Search will be more efficient/faster than Binary Search for small input sizes up to a certain point.
 
+<br/>
+
 **B. To know at what point of an input size that an algorithm would be best suited for**   
 
 Performing the analysis saves from using trial and error with the [steps mentioned here]().  
