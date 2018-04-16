@@ -1,6 +1,6 @@
 # Sorting Algorithms
 
-#### This has been moved this to the [Wiki section](https://github.com/Bubblemelon/algorithms/wiki/Sorting-Algorithms) of this repository.  
+#### The contents with the above title of this README has been moved this to the [Wiki section](https://github.com/Bubblemelon/algorithms/wiki/Sorting-Algorithms) of this repository.  
 <br/>
 The following are some reasons why and what I have discovered before making this decision.  
 <br/>
