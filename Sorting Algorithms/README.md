@@ -9,7 +9,7 @@ The following are some reasons why and what I have discovered before making this
 
 **Style Attribute:**
 
-Inline style attributes are always removed after rendering (e.g. within `<table>` tag). I have not identified the source of this outcome. This outcome can be seen using "inspect" tool on Chrome, inspect this page by doing <kbd>&#8984;</kbd> or <kbd>CTRL</kbd>+<kbd>⌥</kbd>+<kbd>C</kbd>.  
+Inline style attributes are always removed after rendering (e.g. within `<table>` tag). I have not identified the source of this outcome. Likely due to inline sanitation perhaps protecting against XSS attacks and similar. This outcome can be seen using "inspect" tool on Chrome, inspect this page by doing <kbd>&#8984;</kbd> or <kbd>CTRL</kbd>+<kbd>⌥</kbd>+<kbd>C</kbd>.  
 
 <br/>
 <table style="width:100%">
